@@ -1,1 +1,7 @@
-
+streamlit
+typing
+pydantic
+beautifulsoup4
+datetime
+pandas
+tls_client
