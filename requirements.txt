@@ -1,15 +1,7 @@
-python
 streamlit
 typing
-enum
 pydantic
-json
-bs4
-threading
-urllib
-requests
-re
-concurrent
+beautifulsoup4
 datetime
-random
 pandas
+tls_client
