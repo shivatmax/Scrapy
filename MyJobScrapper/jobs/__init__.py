@@ -1,7 +1,7 @@
-from typing import Union, Optional
+from typing import Optional
 from datetime import date
 from enum import Enum
-from pydantic import BaseModel, validator
+from pydantic import BaseModel
 
 
 class JobType(Enum):
@@ -163,7 +163,7 @@ class Country(Enum):
 
 
 class Location(BaseModel):
-    country: Country | None = None
+    country: Optional[Country] = None
     city: Optional[str] = None
     state: Optional[str] = None
 
