@@ -1,8 +1,5 @@
 """
-jobspy.scrapers.glassdoor
-~~~~~~~~~~~~~~~~~~~
-
-This module contains routines to scrape Glassdoor.
+Scrapy module for Glassdoor.
 """
 import json
 from typing import Optional, Any

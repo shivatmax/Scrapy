@@ -1,5 +1,5 @@
 """
-jobspy.scrapers.linkedin
+Scrapy.scrapers.linkedin
 ~~~~~~~~~~~~~~~~~~~
 
 This module contains routines to scrape LinkedIn.

@@ -1,5 +1,5 @@
 """
-jobspy.scrapers.ziprecruiter
+Scrapy.scrapers.ziprecruiter
 ~~~~~~~~~~~~~~~~~~~
 
 This module contains routines to scrape ZipRecruiter.
