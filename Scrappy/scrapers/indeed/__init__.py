@@ -84,7 +84,7 @@ class IndeedScraper(Scraper):
                 headers=self.get_headers(),
                 params=params,
                 allow_redirects=True,
-                timeout_seconds=10,
+                timeout_seconds=40,
             )
             if response.status_code not in range(200, 400):
                 raise IndeedException(
