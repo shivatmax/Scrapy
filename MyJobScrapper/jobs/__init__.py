@@ -2,6 +2,9 @@ from typing import Optional
 from datetime import date
 from enum import Enum
 from pydantic import BaseModel
+from typing import Optional
+from pydantic import BaseModel
+from enum import Enum
 
 
 class JobType(Enum):
@@ -196,10 +199,17 @@ class CompensationInterval(Enum):
         return cls[pay_period].value if pay_period in cls.__members__ else None
 
 
+class CompensationInterval(Enum):
+    YEARLY = "yearly"
+    MONTHLY = "monthly"
+    WEEKLY = "weekly"
+    DAILY = "daily"
+    HOURLY = "hourly"
+
 class Compensation(BaseModel):
     interval: Optional[CompensationInterval] = None
-    min_amount: int | None = None
-    max_amount: int | None = None
+    min_amount: Optional[int] = None
+    max_amount: Optional[int] = None
     currency: Optional[str] = "USD"
 
 
@@ -209,17 +219,17 @@ class JobPost(BaseModel):
     job_url: str
     location: Optional[Location]
 
-    description: str | None = None
-    company_url: str | None = None
+    description: Optional[str] = None
+    company_url: Optional[str] = None
 
-    job_type: list[JobType] | None = None
-    compensation: Compensation | None = None
-    date_posted: date | None = None
-    benefits: str | None = None
-    emails: list[str] | None = None
-    num_urgent_words: int | None = None
-    is_remote: bool | None = None
-    # company_industry: str | None = None
+    job_type: Optional[list[JobType]] = None
+    compensation: Optional[Compensation] = None
+    date_posted: Optional[date] = None
+    benefits: Optional[str] = None
+    emails: Optional[list[str]] = None
+    num_urgent_words: Optional[int] = None
+    is_remote: Optional[bool] = None
+    # company_industry: Optional[str] = None
 
 
 class JobResponse(BaseModel):
