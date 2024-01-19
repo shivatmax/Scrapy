@@ -5,4 +5,3 @@ beautifulsoup4
 datetime
 pandas
 tls_client
-python-jobspy
