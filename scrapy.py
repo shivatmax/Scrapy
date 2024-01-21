@@ -5,14 +5,14 @@ def main():
     st.markdown("<p class='subtitle'>Hey there! I’m Scrapy, created by Shiv 😎. I’m here to help you find and save jobs with all the details in a CSV file 🤖.</p>", unsafe_allow_html=True)
 
     # Multiselect optionsS
-    site_name_options = ["linkedin","indeed", "glassdoor","zip_recruiter"] #, "zip_recruiter"
+    site_name_options = ["linkedin", "glassdoor","zip_recruiter"] #"indeed"
     selected_site_names = st.multiselect("Select job sites", site_name_options)
 
     # Text fields
     search_term = st.text_input("Job Title", "software engineer")
     location = st.text_input("Location", "Delhi, India")
     results_wanted = st.text_input("total results wanted", "10")
-    country_indeed = st.text_input("Country for indeed/glassdoor", "India")
+    country_indeed = st.text_input("Country for glassdoor", "India") #for indeed
 
     if st.button("Scrape Jobs"):
         with st.spinner("Scraping jobs..."):
