@@ -155,18 +155,11 @@ python main.py
 To execute tests, run:
 
 ```sh
-pytest
+streamlit run main.py
 ```
 
 ---
 
-## 🛠 Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
-
----
 
 ## 🤝 Contributing
 
@@ -204,17 +197,5 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 </details>
 
 ---
-
-## 📄 License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## 👏 Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-quick-links)
 
 ---
